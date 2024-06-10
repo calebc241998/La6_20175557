@@ -1,0 +1,103 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6EF8B">
+
+
+    <TextView
+        android:id="@+id/registerRedirectText"
+        android:layout_width="252dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="56dp"
+        android:text="¿Aún no tienes una cuenta? Regístrate"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/btn_login_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="468dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="130dp"
+        android:text="Login Google"
+        app:layout_constraintBottom_toTopOf="@+id/registerRedirectText"
+        app:layout_constraintEnd_toStartOf="@+id/btn_login_mail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_login_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="468dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="130dp"
+        android:text="Login mail"
+        app:layout_constraintBottom_toTopOf="@+id/registerRedirectText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_login_google"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="356dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="300dp"
+        android:text="Bienvenido"
+        android:textAlignment="center"
+        android:textColor="#100F0F"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLab"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewLab"
+        android:layout_width="296dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="48dp"
+        android:forceDarkAllowed="false"
+        android:text="Sistema de Gestión de dinero"
+        android:textAlignment="center"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="93dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="39dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/textViewLab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
